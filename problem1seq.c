@@ -62,7 +62,7 @@ int main(int argc, char** argv) {
     free(data);
 
     clock_t end = clock();
-    double elapsed =(double)(end - start);
+    double elapsed =(double)(end - start)/CLOCKS_PER_SEC;
     printf("Elapsed time: %f seconds\n", elapsed);
 
     return 0;
